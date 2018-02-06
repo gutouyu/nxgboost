@@ -42,3 +42,7 @@
 * `attribute_list.py`
     * 建立样本index在每一个feature维度下，和bin index之间的关系
     * 统计每个feature下面，missing value的个数
+   
+* `class_list.py`
+    * 存储样本index和tree_node的映射关系
+    * 负责更新grad，hess，histogram，prediction
