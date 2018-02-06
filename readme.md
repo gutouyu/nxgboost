@@ -33,10 +33,9 @@
     （2）从中进行行抽样。
     （3）统计value_counts。如果distinct_value小于max_bin，那么实际的bin退化为distinct_value,并以这些值作为bin的上限。 
      注意，这种时候可能导致每个bin中样本数量不均衡。
-    （4）根据max_bin和value_counts，均匀的填充bin。要保证相同取值的样本在同一个bin中，所以bin中样本的数量可能也不是严格相等的。
+    （4）根据max_bin和value_counts，`均匀的填充bin(类似于选取分位数)`。要保证相同取值的样本在同一个bin中，所以bin中样本的数量可能也不是严格相等的。
 
 * `sampling.py`
     * 按行采样
     * 按列采样
 
-* ``
