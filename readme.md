@@ -21,7 +21,7 @@
 
 * `tree.py`
     * 计算 weights for each leaf
-    * calculate splits gain for one feature. missing value 尝试三种策略：left,right,单独一个分支。选取三种分法中gain最大的一种。
+    * calculate splits gain for one feature。对于missing value, 尝试三种策略：left,right,单独一个分支。选取三种分法中gain最大的一种。
     * 未完待续
 
 * `binning.py`
