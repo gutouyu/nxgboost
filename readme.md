@@ -39,3 +39,6 @@
     * 按行采样
     * 按列采样
 
+* `attribute_list.py`
+    * 建立样本index在每一个feature维度下，和bin index之间的关系
+    * 统计每个feature下面，missing value的个数
