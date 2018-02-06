@@ -97,3 +97,15 @@ class TreeNode(object):
         # clear not necessary instance attribute and methods
         del self.best_uint8_thresholds, self.best_thresholds, self.best_gains, \
             self.Grad, self.Hess, self.G_left, self.H_left, self.feature_dim
+
+"""
+about TreeNode.name, an example:
+            1
+    2       3       4
+  5 6 7   8 9 10  11 12 13
+  
+name of the root node is 1,
+its left child's name is 3*root.name - 1,
+its right child's name is 3*root.name + 1,
+the middle child is nan_child, its name is 3*root.name. The middle child name can be None
+"""
